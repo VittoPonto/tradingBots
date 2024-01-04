@@ -9,3 +9,5 @@ The idea is to create a bot for trading with variations in seconds, or few minut
 It have to be clear to predict when the price could increase or decrease.
 
 There are different techniques: RSI, MA, AI.
+
+IMPORTANT: read description of every proyect.
