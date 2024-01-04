@@ -74,7 +74,7 @@ def trade(rsi):
         # Crea una orden de compra al precio actual
         amount = (busd_balance / current_price) -1
         exchange.create_market_buy_order(symbol, amount)
-        print(f'Compra realizada, a BTC = {current_price}')
+        print(f'Compra realizada, a {par1} = {current_price}')
         buyFlag2 = False
 
     if rsi > 65 and btc_balance > 10/current_price and sellFlag == False:
@@ -83,7 +83,7 @@ def trade(rsi):
     if (rsi < 65 and sellFlag == True) or (rsi > 75 and sellFlag == True):
         # Crea una orden de venta al precio actual
         exchange.create_market_sell_order(symbol, btc_balance)
-        print(f'Venta realizada, a BTC = {current_price}')
+        print(f'Venta realizada, a {par1} = {current_price}')
         sellFlag = False
 
 sellFlag = False
